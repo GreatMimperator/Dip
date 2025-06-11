@@ -1,0 +1,33 @@
+# Основные настройки Telegram
+telegram:
+  api_id: "123456789"  # ID приложения Telegram
+  api_hash: "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"  # Хеш приложения Telegram
+  bot_token: "BBBBBBBB:AAAAAAAAAAAAAAAAAAAAAAAAAAA"  # Токен бота
+
+# Настройки администраторов
+admin:
+  sysadmin_ids:  # Список ID сисадминов (int64)
+    - 123456790
+
+ui:
+  page_size: 5
+
+# скрипт создания - в файле init_local_pg.py
+postgres:
+  host: "127.0.0.1"
+  port: 5432
+  db: "botdb"
+  user: "botuser"
+  password: "botpass" 
+
+# Настройки очереди
+queue:
+  type: "rabbitmq"
+  host: "localhost"
+  port: 5672
+  username: "guest"
+  password: "guest"
+  vhost: "/" 
+
+ollama:
+  model: "gemma3:27b"

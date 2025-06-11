@@ -1,0 +1,8 @@
+pyyaml
+aiogram
+asyncpg
+psycopg2-binary
+aio-pika>=9.3.0
+ffmpeg-python>=0.2.0
+gigaam
+requests
